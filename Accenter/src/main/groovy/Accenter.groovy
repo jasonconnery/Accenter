@@ -2,7 +2,7 @@ import groovy.xml.MarkupBuilder
 
 class Accenter
 {
-    private static map = ['a':'á' , b:'b' , c:'č' , d:'d' , e:'ë' , f:'f' , g:'g' , h:'h' , i:'î', j: 'j' , k:'k' , l:'ł' , m :'m' , n:'ñ', o:'ö' , p:'p' , q:'q', r:'r' , s:'š' , t:'t' , u:'ü' , v:'v' , w:'w' , x:'x' , y:'ÿ' , z:'ż' , A:'Ä',B:'B',C:'Č',D:'D',E:'Ę',F:'F',G:'G',H:'H',I:'Î',J:'J',K:'K',L:'Ł'] ;
+    private static map = ['a':'á' , b:'b' , c:'č' , d:'d' , e:'ë' , f:'f' , g:'g' , h:'h' , i:'î', j: 'j' , k:'k' , l:'ł' , m :'m' , n:'ñ', o:'ö' , p:'p' , q:'q', r:'r' , s:'š' , t:'t' , u:'ü' , v:'v' , w:'w' , x:'x' , y:'ÿ' , z:'ż' , A:'Ä',B:'B',C:'Č',D:'D',E:'Ę',F:'F',G:'G',H:'H',I:'Î',J:'J',K:'K',L:'Ł',M:"M",N:'Ń',O:'Ō',P:'P',Q:'Q',R:'R',S:'Ś',T:'T',U:'Ü',V:'V',W:'W',X:'X',Y:'Ÿ',Z:'Ž'] ;
     
     public static String replace(String input)
     {
@@ -83,7 +83,7 @@ class Accenter
     {
         if( args.length < 1 )
         {
-            println Accenter.replace("the quick brown fox jumped over the lazy doge. THE QUICK BROWN FOX JUMPED OVER THE LAZY DOGE");
+            println Accenter.replace("the quick brown fox jumped over the lazy doge.\nTHE WIZARD QUICKLY JINXED THE GNOMES BEFORE THEY VAPOURIZED.");
             return ;
         }
 
